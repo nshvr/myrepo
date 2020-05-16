@@ -1,0 +1,11 @@
+---
+- name: Deploying Application in tomcat server ...
+  hosts: 192.168.56.40
+  become: true
+  tasks: 
+    - name: Download and deploy artifact on tomact server ...
+      get_url: 
+         url: http://192.168.56.40:8081/repository/nexus-repo/com/login/AccountLogin/1.0-SNAPSHOT/AccountLogin-1.0-20200516.131409-1.war
+         dest: /var/lib/docker/volumes/tomcat_home/_data
+         force: yes 
+      
