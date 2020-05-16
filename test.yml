@@ -8,6 +8,6 @@
         name: "{{item}}"
         state: present
       with_items: 
-        - Binu1
-        - Banti1
+        - Binu12
+        - Banti12
 
