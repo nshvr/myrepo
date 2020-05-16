@@ -1,6 +1,6 @@
 ---
 - name: Playbook for AWX tower
-  hosts: ['192.168.56.10','192.168.56.20']
+  hosts: ['192.168.56.10','192.168.56.30']
   become: true
   tasks: 
     - name: User creation
@@ -8,6 +8,6 @@
         name: "{{item}}"
         state: present
       with_items: 
-        - Binu1234
-        - Banti1234
+        - Binu1
+        - Banti1
 
