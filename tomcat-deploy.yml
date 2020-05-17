@@ -7,5 +7,6 @@
       get_url: 
          url: http://192.168.56.17:8081/repository/harirepo/com/login/AccountLogin/1.0-SNAPSHOT/AccountLogin-1.0-20200517.100407-1.war
          dest: /var/lib/docker/volumes/tomcat_home/_data
-         force: yes 
+         force: yes
+         
       
